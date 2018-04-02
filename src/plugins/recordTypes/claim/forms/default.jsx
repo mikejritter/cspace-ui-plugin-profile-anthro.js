@@ -6,7 +6,6 @@ const template = (configContext) => {
   } = configContext.lib;
 
   const {
-    Cols,
     Col,
     Panel,
     Row,

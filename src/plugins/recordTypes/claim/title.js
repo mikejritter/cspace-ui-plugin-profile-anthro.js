@@ -13,5 +13,5 @@ export default configContext => (data) => {
     return '';
   }
 
-  return  common.get('claimNumber');
+  return common.get('claimNumber');
 };

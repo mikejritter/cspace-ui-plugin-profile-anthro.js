@@ -3,11 +3,9 @@ import { defineMessages } from 'react-intl';
 export default (configContext) => {
   const {
     AutocompleteInput,
-    CheckboxInput,
     CompoundInput,
     DateInput,
     IDGeneratorInput,
-    TermPickerInput,
     TextInput,
   } = configContext.inputComponents;
 
