@@ -41,6 +41,7 @@
     "test-selenium": "wdio wdio.conf.js"
   },
   "dependencies": {
+    "cspace-ui-plugin-ext-annotation": "^0.0.2",
     "react-intl": "^2.3.0"
   },
   "devDependencies": {
