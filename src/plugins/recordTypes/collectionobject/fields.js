@@ -379,6 +379,7 @@ export default (configContext) => {
           },
         },
       },
+      ...extensions.annotation.collectionobject.fields,
       ...extensions.nagpra.collectionobject.fields,
     },
   };

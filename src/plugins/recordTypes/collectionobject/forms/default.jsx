@@ -93,6 +93,7 @@ const template = (configContext) => {
           </Col>
         </Cols>
 
+        {extensions.annotation.collectionobject.form}
         {extensions.dimension.form}
 
         <Field name="materialGroupList">
