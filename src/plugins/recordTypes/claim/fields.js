@@ -188,6 +188,7 @@ export default (configContext) => {
           },
         },
       },
+      ...extensions.nagpra.claim.fields,
     },
   };
 };

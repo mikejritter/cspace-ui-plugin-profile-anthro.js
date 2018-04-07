@@ -222,6 +222,8 @@ const template = (configContext) => {
         </Row>
       </Panel>
 
+      {extensions.nagpra.collectionobject.form}
+
       <Panel name="desc" collapsible collapsed>
         <Row>
           <Col>

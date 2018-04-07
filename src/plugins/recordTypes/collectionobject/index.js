@@ -9,11 +9,11 @@ export default () => configContext => ({
   optionLists,
   recordTypes: {
     collectionobject: {
-      messages,
       advancedSearch: advancedSearch(configContext),
       columns: columns(configContext),
       forms: forms(configContext),
       fields: fields(configContext),
+      messages: messages(configContext),
     },
   },
 });
