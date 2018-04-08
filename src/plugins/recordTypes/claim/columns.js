@@ -17,7 +17,20 @@ export default (configContext) => {
         }),
         order: 10,
         sortBy: 'claims_common:claimNumber',
-        width: 250,
+        width: 200,
+      },
+      // This field is from the claim extension. At some point the base claim record should be
+      // extracted into its own package, so its column config should not contain nagpraClaimName.
+      nagpraClaimName: {
+        messages: defineMessages({
+          label: {
+            id: 'column.claim.default.nagpraClaimName',
+            defaultMessage: 'Name',
+          },
+        }),
+        order: 15,
+        sortBy: 'claims_nagpra:nagpraClaimName',
+        width: 200,
       },
       claimFiledOnBehalfOf: {
         formatValue: formatRefName,
@@ -29,7 +42,7 @@ export default (configContext) => {
         }),
         order: 20,
         sortBy: 'claims_common:claimantGroupList/0/claimFiledOnBehalfOf',
-        width: 400,
+        width: 300,
       },
       updatedAt: {
         formatValue: formatTimestamp,
