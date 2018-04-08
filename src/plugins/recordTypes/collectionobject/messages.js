@@ -6,6 +6,7 @@ export default (configContext) => {
   } = configContext.config;
 
   return {
+    inputTable: extensions.naturalhistory.collectionobject.messages.inputTable,
     panel: {
       ...defineMessages({
         bio: {
@@ -14,6 +15,7 @@ export default (configContext) => {
         },
       }),
       ...extensions.nagpra.collectionobject.messages.panel,
+      ...extensions.culturalcare.collectionobject.messages.panel,
     },
   };
 };

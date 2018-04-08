@@ -224,6 +224,7 @@ const template = (configContext) => {
       </Panel>
 
       {extensions.nagpra.collectionobject.form}
+      {extensions.culturalcare.collectionobject.form}
 
       <Panel name="desc" collapsible collapsed>
         <Row>
@@ -276,6 +277,8 @@ const template = (configContext) => {
               </InputTable>
             </Col>
           </Cols>
+
+          {extensions.naturalhistory.collectionobject.form.taxonomicIdentGroupList}
         </Panel>
 
         <Panel name="content" collapsible collapsed>

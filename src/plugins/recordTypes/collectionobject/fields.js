@@ -380,7 +380,9 @@ export default (configContext) => {
         },
       },
       ...extensions.annotation.collectionobject.fields,
+      ...extensions.culturalcare.collectionobject.fields,
       ...extensions.nagpra.collectionobject.fields,
+      ...extensions.naturalhistory.collectionobject.fields,
     },
   };
 };

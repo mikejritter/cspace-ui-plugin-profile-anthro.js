@@ -4,6 +4,9 @@
 
 import { defineMessages } from 'react-intl';
 import annotationExtensionPlugin from 'cspace-ui-plugin-ext-annotation';
+import culturalCareExtensionPlugin from 'cspace-ui-plugin-ext-culturalcare';
+import naturalHistoryExtensionPlugin from 'cspace-ui-plugin-ext-naturalhistory';
+import taxonRecordPlugin from 'cspace-ui-plugin-record-taxon';
 import messages from './messages';
 import plugins from './plugins';
 import styles from '../styles/cspace-ui-plugin-profile/anthro.css';
@@ -26,6 +29,9 @@ module.exports = () => ({
   },
   plugins: [
     annotationExtensionPlugin(),
+    culturalCareExtensionPlugin(),
+    naturalHistoryExtensionPlugin(),
+    taxonRecordPlugin(),
     ...plugins.map(plugin => plugin()),
   ],
 });
