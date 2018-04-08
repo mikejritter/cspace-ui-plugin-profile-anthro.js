@@ -6,12 +6,12 @@ export default {
       name: {
         id: 'vocab.concept.archculture.name',
         description: 'The name of the archculture concept vocabulary.',
-        defaultMessage: 'Arch Culture',
+        defaultMessage: 'Archaeological Culture',
       },
       collectionName: {
         id: 'vocab.concept.archculture.collectionName',
         description: 'The name of a collection of records from the archculture concept vocabulary.',
-        defaultMessage: 'Arch Cultures',
+        defaultMessage: 'Archaeological Cultures',
       },
     }),
     serviceConfig: {
