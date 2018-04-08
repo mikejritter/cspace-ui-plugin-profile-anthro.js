@@ -46,6 +46,9 @@ export default {
     </p>
   `,
 
+  'record.claim.name': 'NAGPRA Claim',
+  'record.claim.collectionName': 'NAGPRA Claims',
+
   'field.collectionobjects_common.assocPeopleGroup.name': 'Associated cultural group',
   'field.collectionobjects_common.assocPeople.name': 'Cultural group',
   'field.collectionobjects_common.assocPeopleType.name': 'Type of assoc.',
