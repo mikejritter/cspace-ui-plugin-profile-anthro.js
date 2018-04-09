@@ -1,5 +1,5 @@
-/* global cspaceUIPluginProfileAnthropology */
-/* The cspaceUIPluginProfileAnthropology global variable is set by webpack (in non-test builds). See
+/* global cspaceUIPluginProfileAnthro */
+/* The cspaceUIPluginProfileAnthro global variable is set by webpack (in non-test builds). See
  * webpack.config.js. */
 
 import { defineMessages } from 'react-intl';
@@ -17,14 +17,14 @@ module.exports = () => ({
   prettyUrls: true,
   tenantId: '1500',
   pluginInfo: {
-    cspaceUIPluginProfileAnthropology: {
+    cspaceUIPluginProfileAnthro: {
       messages: defineMessages({
         name: {
-          id: 'cspaceUIPluginProfileAnthropology.name',
+          id: 'cspaceUIPluginProfileAnthro.name',
           defaultMessage: 'Anthropology profile',
         },
       }),
-      version: cspaceUIPluginProfileAnthropology.packageVersion,
+      version: cspaceUIPluginProfileAnthro.packageVersion,
     },
   },
   plugins: [

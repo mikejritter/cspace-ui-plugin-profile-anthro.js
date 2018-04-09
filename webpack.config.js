@@ -4,7 +4,7 @@ const path = require('path');
 const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-const library = 'cspaceUIPluginProfileAnthropology';
+const library = 'cspaceUIPluginProfileAnthro';
 const isProduction = process.env.NODE_ENV === 'production';
 const filename = `${library}${isProduction ? '.min' : ''}.js`;
 
