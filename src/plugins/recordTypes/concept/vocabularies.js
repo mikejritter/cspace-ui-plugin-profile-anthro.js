@@ -52,4 +52,21 @@ export default {
       servicePath: 'urn:cspace:name(ethfilecode)',
     },
   },
+  nomenclature: {
+    messages: defineMessages({
+      name: {
+        id: 'vocab.concept.nomenclature.name',
+        description: 'The name of the nomenclature concept vocabulary.',
+        defaultMessage: 'Nomenclature',
+      },
+      collectionName: {
+        id: 'vocab.concept.nomenclature.collectionName',
+        description: 'The name of a collection of records from the nomenclature concept vocabulary.',
+        defaultMessage: 'Nomenclature',
+      },
+    }),
+    serviceConfig: {
+      servicePath: 'urn:cspace:name(nomenclature)',
+    },
+  },
 };
