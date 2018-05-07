@@ -43,6 +43,7 @@
   "dependencies": {
     "cspace-ui-plugin-ext-annotation": "^0.0.4",
     "cspace-ui-plugin-ext-culturalcare": "^0.0.1",
+    "cspace-ui-plugin-ext-locality": "^0.0.4",
     "cspace-ui-plugin-ext-naturalhistory": "^0.0.2",
     "cspace-ui-plugin-record-taxon": "^0.0.1",
     "react-intl": "^2.3.0"

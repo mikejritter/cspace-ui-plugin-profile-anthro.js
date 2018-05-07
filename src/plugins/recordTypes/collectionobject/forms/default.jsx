@@ -4,6 +4,10 @@ const template = (configContext) => {
   } = configContext.lib;
 
   const {
+    CompoundInput,
+  } = configContext.inputComponents;
+
+  const {
     Col,
     Cols,
     Panel,
@@ -549,6 +553,12 @@ const template = (configContext) => {
             <Field name="referenceNote" />
           </Field>
         </Field>
+      </Panel>
+
+      <Panel name="locality" collapsible collapsed>
+        <CompoundInput subpath="ns2:collectionobjects_anthro">
+          {extensions.locality.form}
+        </CompoundInput>
       </Panel>
 
       <Panel name="hierarchy" collapsible collapsed>

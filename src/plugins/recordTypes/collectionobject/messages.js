@@ -6,16 +6,23 @@ export default (configContext) => {
   } = configContext.config;
 
   return {
-    inputTable: extensions.naturalhistory.collectionobject.messages.inputTable,
+    inputTable: {
+      ...extensions.locality.messages.inputTable,
+      ...extensions.naturalhistory.collectionobject.messages.inputTable,
+    },
     panel: {
       ...defineMessages({
         bio: {
           id: 'panel.collectionobject.bio',
           defaultMessage: 'Biological Information',
         },
+        locality: {
+          id: 'panel.collectionobject.locality',
+          defaultMessage: 'Locality Information',
+        },
       }),
-      ...extensions.nagpra.collectionobject.messages.panel,
       ...extensions.culturalcare.collectionobject.messages.panel,
+      ...extensions.nagpra.collectionobject.messages.panel,
     },
   };
 };

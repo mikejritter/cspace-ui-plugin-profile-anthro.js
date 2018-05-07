@@ -5,6 +5,7 @@
 import { defineMessages } from 'react-intl';
 import annotationExtensionPlugin from 'cspace-ui-plugin-ext-annotation';
 import culturalCareExtensionPlugin from 'cspace-ui-plugin-ext-culturalcare';
+import localityExtensionPlugin from 'cspace-ui-plugin-ext-locality';
 import naturalHistoryExtensionPlugin from 'cspace-ui-plugin-ext-naturalhistory';
 import taxonRecordPlugin from 'cspace-ui-plugin-record-taxon';
 import messages from './messages';
@@ -30,6 +31,7 @@ module.exports = () => ({
   plugins: [
     annotationExtensionPlugin(),
     culturalCareExtensionPlugin(),
+    localityExtensionPlugin(),
     naturalHistoryExtensionPlugin(),
     taxonRecordPlugin(),
     ...plugins.map(plugin => plugin()),

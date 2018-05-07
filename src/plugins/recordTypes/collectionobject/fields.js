@@ -378,6 +378,7 @@ export default (configContext) => {
             },
           },
         },
+        ...extensions.locality.fields,
       },
       ...extensions.annotation.collectionobject.fields,
       ...extensions.culturalcare.collectionobject.fields,
