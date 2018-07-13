@@ -29,6 +29,7 @@ export default () => ({
         },
       }),
       order: 20,
+      sortBy: 'collectionobjects_common:objectNameList/0/objectName',
       width: 450,
     },
   },
