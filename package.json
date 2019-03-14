@@ -1,6 +1,6 @@
 {
   "name": "cspace-ui-plugin-profile-anthro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Anthropology profile plugin for the CollectionSpace UI",
   "author": "",
   "license": "ECL-2.0",
@@ -43,7 +43,7 @@
   "dependencies": {
     "cspace-ui-plugin-ext-annotation": "^0.0.4",
     "cspace-ui-plugin-ext-culturalcare": "^0.0.2",
-    "cspace-ui-plugin-ext-locality": "^0.0.4",
+    "cspace-ui-plugin-ext-locality": "^0.0.6",
     "cspace-ui-plugin-ext-naturalhistory": "^0.0.2",
     "cspace-ui-plugin-record-taxon": "^0.0.1",
     "react-intl": "^2.3.0"
