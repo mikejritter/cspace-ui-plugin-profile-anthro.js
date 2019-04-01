@@ -22,6 +22,7 @@ export default (configContext) => {
         },
       }),
       ...extensions.culturalcare.collectionobject.messages.panel,
+      ...extensions.locality.messages.panel,
       ...extensions.nagpra.collectionobject.messages.panel,
     },
   };
