@@ -8,6 +8,7 @@ export default (configContext) => {
   return {
     inputTable: {
       ...extensions.locality.messages.inputTable,
+      ...extensions.nagpra.collectionobject.messages.inputTable,
       ...extensions.naturalhistory.collectionobject.messages.inputTable,
     },
     panel: {

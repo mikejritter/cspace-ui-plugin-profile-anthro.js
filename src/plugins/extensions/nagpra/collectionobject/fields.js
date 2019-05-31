@@ -2,7 +2,10 @@ import { defineMessages } from 'react-intl';
 
 export default (configContext) => {
   const {
+    AutocompleteInput,
+    CheckboxInput,
     CompoundInput,
+    StructuredDateInput,
     TextInput,
     TermPickerInput,
   } = configContext.inputComponents;
@@ -10,6 +13,14 @@ export default (configContext) => {
   const {
     configKey: config,
   } = configContext.configHelpers;
+
+  const {
+    DATA_TYPE_BOOL,
+  } = configContext.dataTypes;
+
+  const {
+    extensions,
+  } = configContext.config;
 
   return {
     'ns2:collectionobjects_nagpra': {
@@ -137,6 +148,62 @@ export default (configContext) => {
             },
           },
         },
+      },
+      nagpraReportFiled: {
+        [config]: {
+          dataType: DATA_TYPE_BOOL,
+          messages: defineMessages({
+            name: {
+              id: 'field.collectionobjects_nagpra.nagpraReportFiled.name',
+              defaultMessage: 'Report filed',
+            },
+            fullName: {
+              id: 'field.collectionobjects_nagpra.nagpraReportFiled.fullName',
+              defaultMessage: 'NAGPRA report filed',
+            },
+          }),
+          view: {
+            type: CheckboxInput,
+          },
+        },
+      },
+      nagpraReportFiledBy: {
+        [config]: {
+          messages: defineMessages({
+            name: {
+              id: 'field.collectionobjects_nagpra.nagpraReportFiledBy.name',
+              defaultMessage: 'By',
+            },
+            fullName: {
+              id: 'field.collectionobjects_nagpra.nagpraReportFiledBy.fullName',
+              defaultMessage: 'NAGPRA report filed by',
+            },
+          }),
+          view: {
+            type: AutocompleteInput,
+            props: {
+              source: 'person/local',
+            },
+          },
+        },
+      },
+      nagpraReportFiledDate: {
+        [config]: {
+          messages: defineMessages({
+            name: {
+              id: 'field.collectionobjects_nagpra.nagpraReportFiledDate.name',
+              defaultMessage: 'Date',
+            },
+            fullName: {
+              id: 'field.collectionobjects_nagpra.nagpraReportFiledDate.fullName',
+              defaultMessage: 'NAGPRA report filed date',
+            },
+          }),
+          view: {
+            type: StructuredDateInput,
+          },
+        },
+        ...extensions.structuredDate.fields,
       },
     },
   };

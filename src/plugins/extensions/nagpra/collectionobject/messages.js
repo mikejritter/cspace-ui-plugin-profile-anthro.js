@@ -7,4 +7,10 @@ export default {
       defaultMessage: 'Repatriation and NAGPRA Compliance Information',
     },
   }),
+  inputTable: defineMessages({
+    nagpraReportFiled: {
+      id: 'panel.ext.nagpra.nagpraReportFiled',
+      defaultMessage: 'Reported to National NAGPRA',
+    },
+  }),
 };

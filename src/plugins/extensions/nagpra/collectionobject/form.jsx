@@ -11,6 +11,7 @@ export default (configContext) => {
 
   const {
     Field,
+    InputTable,
   } = configContext.recordComponents;
 
   return (
@@ -40,6 +41,12 @@ export default (configContext) => {
           </Field>
         </Col>
       </Cols>
+
+      <InputTable name="nagpraReportFiled">
+        <Field name="nagpraReportFiled" subpath="ns2:collectionobjects_nagpra" />
+        <Field name="nagpraReportFiledBy" subpath="ns2:collectionobjects_nagpra" />
+        <Field name="nagpraReportFiledDate" subpath="ns2:collectionobjects_nagpra" />
+      </InputTable>
     </Panel>
   );
 };
