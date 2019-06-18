@@ -1,6 +1,6 @@
 {
   "name": "cspace-ui-plugin-profile-anthro",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Anthropology profile plugin for the CollectionSpace UI",
   "author": "Ray Lee <ray.lee@lyrasis.org>",
   "license": "ECL-2.0",
@@ -45,7 +45,7 @@
     "cspace-ui-plugin-ext-culturalcare": "^1.0.0",
     "cspace-ui-plugin-ext-locality": "^1.0.1",
     "cspace-ui-plugin-ext-naturalhistory": "^1.0.0",
-    "cspace-ui-plugin-record-taxon": "^1.0.0",
+    "cspace-ui-plugin-record-taxon": "^1.0.1",
     "react-intl": "^2.3.0"
   },
   "devDependencies": {

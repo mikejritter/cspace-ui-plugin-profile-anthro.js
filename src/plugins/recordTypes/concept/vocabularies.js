@@ -13,6 +13,11 @@ export default {
         description: 'The name of a collection of records from the archculture concept vocabulary.',
         defaultMessage: 'Archaeological Cultures',
       },
+      itemName: {
+        id: 'vocab.concept.archculture.itemName',
+        description: 'The name of a record from the vocabulary.',
+        defaultMessage: 'Archaeological Culture',
+      },
     }),
     serviceConfig: {
       servicePath: 'urn:cspace:name(archculture)',
@@ -29,6 +34,11 @@ export default {
         id: 'vocab.concept.ethculture.collectionName',
         description: 'The name of a collection of records from the ethculture concept vocabulary.',
         defaultMessage: 'Ethnographic Cultures',
+      },
+      itemName: {
+        id: 'vocab.concept.ethculture.itemName',
+        description: 'The name of a record from the vocabulary.',
+        defaultMessage: 'Ethnographic Culture',
       },
     }),
     serviceConfig: {
@@ -47,6 +57,11 @@ export default {
         description: 'The name of a collection of records from the ethfilecode concept vocabulary.',
         defaultMessage: 'Ethnographic File Codes',
       },
+      itemName: {
+        id: 'vocab.concept.ethfilecode.itemName',
+        description: 'The name of a record from the vocabulary.',
+        defaultMessage: 'Ethnographic File Code',
+      },
     }),
     serviceConfig: {
       servicePath: 'urn:cspace:name(ethfilecode)',
@@ -62,6 +77,11 @@ export default {
       collectionName: {
         id: 'vocab.concept.nomenclature.collectionName',
         description: 'The name of a collection of records from the nomenclature concept vocabulary.',
+        defaultMessage: 'Nomenclature',
+      },
+      itemName: {
+        id: 'vocab.concept.nomenclature.itemName',
+        description: 'The name of a record from the vocabulary.',
         defaultMessage: 'Nomenclature',
       },
     }),
