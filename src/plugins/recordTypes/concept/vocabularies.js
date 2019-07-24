@@ -67,6 +67,9 @@ export default {
       servicePath: 'urn:cspace:name(ethfilecode)',
     },
   },
+  // TODO: As of cspace 5.2/cspace-ui 3.0.0, nomenclature is in core, so this can eventually be
+  // removed from the anthro override. Keeping it in for now, to maintain compatibility with older
+  // versions.
   nomenclature: {
     messages: defineMessages({
       name: {
@@ -77,7 +80,7 @@ export default {
       collectionName: {
         id: 'vocab.concept.nomenclature.collectionName',
         description: 'The name of a collection of records from the nomenclature concept vocabulary.',
-        defaultMessage: 'Nomenclature',
+        defaultMessage: 'Nomenclature Concepts',
       },
       itemName: {
         id: 'vocab.concept.nomenclature.itemName',
