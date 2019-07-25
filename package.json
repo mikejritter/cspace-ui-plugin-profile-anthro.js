@@ -45,6 +45,7 @@
     "cspace-ui-plugin-ext-culturalcare": "^1.0.0",
     "cspace-ui-plugin-ext-locality": "^1.0.1",
     "cspace-ui-plugin-ext-naturalhistory": "^1.0.0",
+    "cspace-ui-plugin-record-osteology": "^1.0.2",
     "cspace-ui-plugin-record-taxon": "^1.0.1",
     "react-intl": "^2.3.0"
   },

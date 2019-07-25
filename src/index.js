@@ -7,6 +7,7 @@ import annotationExtensionPlugin from 'cspace-ui-plugin-ext-annotation';
 import culturalCareExtensionPlugin from 'cspace-ui-plugin-ext-culturalcare';
 import localityExtensionPlugin from 'cspace-ui-plugin-ext-locality';
 import naturalHistoryExtensionPlugin from 'cspace-ui-plugin-ext-naturalhistory';
+import osteologyRecordPlugin from 'cspace-ui-plugin-record-osteology';
 import taxonRecordPlugin from 'cspace-ui-plugin-record-taxon';
 import messages from './messages';
 import plugins from './plugins';
@@ -33,6 +34,7 @@ export default () => ({
     culturalCareExtensionPlugin(),
     localityExtensionPlugin(),
     naturalHistoryExtensionPlugin(),
+    osteologyRecordPlugin(),
     taxonRecordPlugin(),
     ...plugins.map(plugin => plugin()),
   ],
