@@ -7,6 +7,16 @@ export default (configContext) => {
 
   return {
     inputTable: {
+      ...defineMessages({
+        mortuaryTreatment: {
+          id: 'inputTable.collectionobject.mortuaryTreatment',
+          defaultMessage: 'Mortuary treatment',
+        },
+        behrensmeyer: {
+          id: 'inputTable.collectionobject.behrensmeyer',
+          defaultMessage: 'Behrensmeyer stage',
+        },
+      }),
       ...extensions.locality.messages.inputTable,
       ...extensions.nagpra.collectionobject.messages.inputTable,
       ...extensions.naturalhistory.collectionobject.messages.inputTable,

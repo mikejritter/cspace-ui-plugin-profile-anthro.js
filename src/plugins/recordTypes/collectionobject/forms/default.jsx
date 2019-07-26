@@ -285,6 +285,40 @@ const template = (configContext) => {
           </Cols>
 
           {extensions.naturalhistory.collectionobject.form.taxonomicIdentGroupList}
+
+          <Field name="commingledRemainsGroupList" subpath="ns2:collectionobjects_anthro">
+            <Field name="commingledRemainsGroup">
+              <Panel>
+                <Cols>
+                  <Col>
+                    <Field name="minIndividuals" />
+                    <Field name="bone" />
+                    <Field name="side" />
+                  </Col>
+
+                  <Col>
+                    <Row>
+                      <Field name="count" />
+                      <Field name="dentition" />
+                    </Row>
+
+                    <Field name="sex" />
+                    <Field name="ageRange" />
+                  </Col>
+                </Cols>
+
+                <InputTable name="mortuaryTreatment">
+                  <Field name="mortuaryTreatment" />
+                  <Field name="mortuaryTreatmentNote" />
+                </InputTable>
+
+                <InputTable name="behrensmeyer">
+                  <Field name="behrensmeyerSingleLower" />
+                  <Field name="behrensmeyerUpper" />
+                </InputTable>
+              </Panel>
+            </Field>
+          </Field>
         </Panel>
 
         <Panel name="content" collapsible collapsed>

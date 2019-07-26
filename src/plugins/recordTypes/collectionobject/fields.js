@@ -3,6 +3,7 @@ import { defineMessages } from 'react-intl';
 export default (configContext) => {
   const {
     AutocompleteInput,
+    CheckboxInput,
     CompoundInput,
     OptionPickerInput,
     StructuredDateInput,
@@ -16,6 +17,7 @@ export default (configContext) => {
 
   const {
     DATA_TYPE_FLOAT,
+    DATA_TYPE_INT,
   } = configContext.dataTypes;
 
   const {
@@ -375,6 +377,206 @@ export default (configContext) => {
             }),
             view: {
               type: TextInput,
+            },
+          },
+        },
+        commingledRemainsGroupList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          commingledRemainsGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_anthro.commingledRemainsGroup.name',
+                  defaultMessage: 'Commingled remains',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+              },
+            },
+            minIndividuals: {
+              [config]: {
+                dataType: DATA_TYPE_INT,
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.minIndividuals.name',
+                    defaultMessage: 'Minimum number of individuals',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+            bone: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.bone.name',
+                    defaultMessage: 'Bone',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+            side: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.side.name',
+                    defaultMessage: 'Side',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'bodyside',
+                  },
+                },
+              },
+            },
+            count: {
+              [config]: {
+                dataType: DATA_TYPE_INT,
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.count.name',
+                    defaultMessage: 'Count',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+            sex: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.sex.name',
+                    defaultMessage: 'Sex',
+                  },
+                }),
+                view: {
+                  type: OptionPickerInput,
+                  props: {
+                    source: 'sexDeterminations',
+                  },
+                },
+              },
+            },
+            ageRange: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.ageRange.name',
+                    defaultMessage: 'Age range represented',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'agerange',
+                  },
+                },
+              },
+            },
+            dentition: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.dentition.name',
+                    defaultMessage: 'Dentition present?',
+                  },
+                }),
+                view: {
+                  type: CheckboxInput,
+                },
+              },
+            },
+            mortuaryTreatment: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.mortuaryTreatment.name',
+                    defaultMessage: 'Treatment',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.mortuaryTreatment.fullName',
+                    defaultMessage: 'Mortuary treatment',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'mortuarytreatment',
+                  },
+                },
+              },
+            },
+            mortuaryTreatmentNote: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.mortuaryTreatmentNote.name',
+                    defaultMessage: 'Note',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.mortuaryTreatmentNote.fullName',
+                    defaultMessage: 'Mortuary treatment note',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+            behrensmeyerSingleLower: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.behrensmeyerSingleLower.name',
+                    defaultMessage: 'Single/lower',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.behrensmeyerSingleLower.fullName',
+                    defaultMessage: 'Behrensmeyer stage - single/lower',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'behrensmeyer',
+                  },
+                },
+              },
+            },
+            behrensmeyerUpper: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.behrensmeyerUpper.name',
+                    defaultMessage: 'Upper',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.behrensmeyerUpper.fullName',
+                    defaultMessage: 'Behrensmeyer stage - upper',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'behrensmeyer',
+                  },
+                },
+              },
             },
           },
         },
