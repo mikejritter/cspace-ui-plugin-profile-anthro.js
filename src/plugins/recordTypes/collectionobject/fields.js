@@ -388,12 +388,6 @@ export default (configContext) => {
           },
           commingledRemainsGroup: {
             [config]: {
-              messages: defineMessages({
-                name: {
-                  id: 'field.collectionobjects_anthro.commingledRemainsGroup.name',
-                  defaultMessage: 'Commingled remains',
-                },
-              }),
               repeating: true,
               view: {
                 type: CompoundInput,

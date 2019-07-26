@@ -27,6 +27,10 @@ export default (configContext) => {
           id: 'panel.collectionobject.bio',
           defaultMessage: 'Biological Information',
         },
+        commingledRemains: {
+          id: 'panel.collectionobject.commingledRemains',
+          defaultMessage: 'Commingled Remains',
+        },
         locality: {
           id: 'panel.collectionobject.locality',
           defaultMessage: 'Locality Information',

@@ -285,7 +285,9 @@ const template = (configContext) => {
           </Cols>
 
           {extensions.naturalhistory.collectionobject.form.taxonomicIdentGroupList}
+        </Panel>
 
+        <Panel name="commingledRemains" collapsible collapsed>
           <Field name="commingledRemainsGroupList" subpath="ns2:collectionobjects_anthro">
             <Field name="commingledRemainsGroup">
               <Panel>
