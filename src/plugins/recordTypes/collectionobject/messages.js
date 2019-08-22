@@ -8,10 +8,6 @@ export default (configContext) => {
   return {
     inputTable: {
       ...defineMessages({
-        mortuaryTreatment: {
-          id: 'inputTable.collectionobject.mortuaryTreatment',
-          defaultMessage: 'Mortuary treatment',
-        },
         behrensmeyer: {
           id: 'inputTable.collectionobject.behrensmeyer',
           defaultMessage: 'Behrensmeyer stage',

@@ -495,40 +495,64 @@ export default (configContext) => {
                 },
               },
             },
-            mortuaryTreatment: {
+            mortuaryTreatmentGroupList: {
               [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.collectionobjects_anthro.mortuaryTreatment.name',
-                    defaultMessage: 'Treatment',
-                  },
-                  fullName: {
-                    id: 'field.collectionobjects_anthro.mortuaryTreatment.fullName',
-                    defaultMessage: 'Mortuary treatment',
-                  },
-                }),
                 view: {
-                  type: TermPickerInput,
-                  props: {
-                    source: 'mortuarytreatment',
-                  },
+                  type: CompoundInput,
                 },
               },
-            },
-            mortuaryTreatmentNote: {
-              [config]: {
-                messages: defineMessages({
-                  name: {
-                    id: 'field.collectionobjects_anthro.mortuaryTreatmentNote.name',
-                    defaultMessage: 'Note',
+              mortuaryTreatmentGroup: {
+                [config]: {
+                  messages: defineMessages({
+                    name: {
+                      id: 'field.collectionobjects_anthro.mortuaryTreatmentGroup.name',
+                      defaultMessage: 'Mortuary treatment',
+                    },
+                  }),
+                  repeating: true,
+                  view: {
+                    type: CompoundInput,
+                    props: {
+                      tabular: true,
+                    },
                   },
-                  fullName: {
-                    id: 'field.collectionobjects_anthro.mortuaryTreatmentNote.fullName',
-                    defaultMessage: 'Mortuary treatment note',
+                },
+                mortuaryTreatment: {
+                  [config]: {
+                    messages: defineMessages({
+                      name: {
+                        id: 'field.collectionobjects_anthro.mortuaryTreatment.name',
+                        defaultMessage: 'Treatment',
+                      },
+                      fullName: {
+                        id: 'field.collectionobjects_anthro.mortuaryTreatment.fullName',
+                        defaultMessage: 'Mortuary treatment',
+                      },
+                    }),
+                    view: {
+                      type: TermPickerInput,
+                      props: {
+                        source: 'mortuarytreatment',
+                      },
+                    },
                   },
-                }),
-                view: {
-                  type: TextInput,
+                },
+                mortuaryTreatmentNote: {
+                  [config]: {
+                    messages: defineMessages({
+                      name: {
+                        id: 'field.collectionobjects_anthro.mortuaryTreatmentNote.name',
+                        defaultMessage: 'Note',
+                      },
+                      fullName: {
+                        id: 'field.collectionobjects_anthro.mortuaryTreatmentNote.fullName',
+                        defaultMessage: 'Mortuary treatment note',
+                      },
+                    }),
+                    view: {
+                      type: TextInput,
+                    },
+                  },
                 },
               },
             },

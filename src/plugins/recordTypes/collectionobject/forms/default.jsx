@@ -309,10 +309,12 @@ const template = (configContext) => {
                   </Col>
                 </Cols>
 
-                <InputTable name="mortuaryTreatment">
-                  <Field name="mortuaryTreatment" />
-                  <Field name="mortuaryTreatmentNote" />
-                </InputTable>
+                <Field name="mortuaryTreatmentGroupList">
+                  <Field name="mortuaryTreatmentGroup">
+                    <Field name="mortuaryTreatment" />
+                    <Field name="mortuaryTreatmentNote" />
+                  </Field>
+                </Field>
 
                 <InputTable name="behrensmeyer">
                   <Field name="behrensmeyerSingleLower" />
