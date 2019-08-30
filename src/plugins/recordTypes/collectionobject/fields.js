@@ -596,6 +596,26 @@ export default (configContext) => {
                 },
               },
             },
+            commingledRemainsNote: {
+              [config]: {
+                messages: defineMessages({
+                  name: {
+                    id: 'field.collectionobjects_anthro.commingledRemainsNote.name',
+                    defaultMessage: 'Note',
+                  },
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.commingledRemainsNote.fullName',
+                    defaultMessage: 'Commingled remains note',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                  props: {
+                    multiline: true,
+                  },
+                },
+              },
+            },
           },
         },
         ...extensions.locality.fields,

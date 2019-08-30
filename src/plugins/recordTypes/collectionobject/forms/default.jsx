@@ -320,6 +320,8 @@ const template = (configContext) => {
                   <Field name="behrensmeyerSingleLower" />
                   <Field name="behrensmeyerUpper" />
                 </InputTable>
+
+                <Field name="commingledRemainsNote" />
               </Panel>
             </Field>
           </Field>
