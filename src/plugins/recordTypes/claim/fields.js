@@ -84,6 +84,10 @@ export default (configContext) => {
             claimFiledBy: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.claims_common.claimFiledBy.fullName',
+                    defaultMessage: 'Claim filed by',
+                  },
                   name: {
                     id: 'field.claims_common.claimFiledBy.name',
                     defaultMessage: 'Filed by',
@@ -100,6 +104,10 @@ export default (configContext) => {
             claimFiledOnBehalfOf: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.claims_common.claimFiledOnBehalfOf.fullName',
+                    defaultMessage: 'Claim filed on behalf of',
+                  },
                   name: {
                     id: 'field.claims_common.claimFiledOnBehalfOf.name',
                     defaultMessage: 'On behalf of',
@@ -116,6 +124,10 @@ export default (configContext) => {
             claimantNote: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.claims_common.claimantNote.fullName',
+                    defaultMessage: 'Claimant note',
+                  },
                   name: {
                     id: 'field.claims_common.claimantNote.name',
                     defaultMessage: 'Note',

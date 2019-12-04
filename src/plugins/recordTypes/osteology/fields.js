@@ -78,7 +78,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.osteology_anthropology.Notes_CulturalModifications.name',
-                defaultMessage: 'Cultural modifications',
+                defaultMessage: 'Cultural modification',
               },
             }),
             view: {
@@ -94,7 +94,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.osteology_anthropology.Notes_NHTaphonomicAlterations.name',
-                defaultMessage: 'Nonhuman taphonomic alterations',
+                defaultMessage: 'Nonhuman taphonomic alteration',
               },
             }),
             view: {
@@ -110,7 +110,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.osteology_anthropology.Notes_CuratorialSuffixing.name',
-                defaultMessage: 'Curatorial suffixing notes',
+                defaultMessage: 'Curatorial suffixing note',
               },
             }),
             view: {
@@ -144,6 +144,10 @@ export default (configContext) => {
           cranialDeformationCategory: {
             [config]: {
               messages: defineMessages({
+                fullName: {
+                  id: 'field.osteology_anthropology.cranialDeformationCategory.fullName',
+                  defaultMessage: 'Cranial deformation general category',
+                },
                 name: {
                   id: 'field.osteology_anthropology.cranialDeformationCategory.name',
                   defaultMessage: 'General category',
@@ -162,9 +166,13 @@ export default (configContext) => {
         cranialDeformationNote: {
           [config]: {
             messages: defineMessages({
+              fullName: {
+                id: 'field.osteology_anthropology.cranialDeformationNote.fullName',
+                defaultMessage: 'Cranial deformation comment',
+              },
               name: {
                 id: 'field.osteology_anthropology.cranialDeformationNote.name',
-                defaultMessage: 'Comments on cranial deformation',
+                defaultMessage: 'Comment',
               },
             }),
             view: {
@@ -198,6 +206,12 @@ export default (configContext) => {
           trepanationGroup: {
             [config]: {
               repeating: true,
+              messages: defineMessages({
+                name: {
+                  id: 'field.osteology_anthropology.trepanationGroup.name',
+                  defaultMessage: 'Trepanation',
+                },
+              }),
               view: {
                 type: CompoundInput,
               },
@@ -205,6 +219,10 @@ export default (configContext) => {
             trepanationLocation: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.osteology_anthropology.trepanationLocation.fullName',
+                    defaultMessage: 'Trepanation location (bone and side)',
+                  },
                   name: {
                     id: 'field.osteology_anthropology.trepanationLocation.name',
                     defaultMessage: 'Location (bone and side)',
@@ -222,6 +240,10 @@ export default (configContext) => {
                   fullName: {
                     id: 'field.osteology_anthropology.trepanationDimensionMax.fullName',
                     defaultMessage: 'Trepanation dimension max.',
+                  },
+                  groupName: {
+                    id: 'field.osteology_anthropology.trepanationDimensionMax.groupName',
+                    defaultMessage: 'Dimension max.',
                   },
                   name: {
                     id: 'field.osteology_anthropology.trepanationDimensionMax.name',
@@ -241,6 +263,10 @@ export default (configContext) => {
                     id: 'field.osteology_anthropology.trepanationDimensionMin.fullName',
                     defaultMessage: 'Trepanation dimension min.',
                   },
+                  groupName: {
+                    id: 'field.osteology_anthropology.trepanationDimensionMin.groupName',
+                    defaultMessage: 'Dimension min.',
+                  },
                   name: {
                     id: 'field.osteology_anthropology.trepanationDimensionMin.name',
                     defaultMessage: 'Min.',
@@ -254,6 +280,10 @@ export default (configContext) => {
             trepanationTechnique: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.osteology_anthropology.trepanationTechnique.fullName',
+                    defaultMessage: 'Trepanation technique',
+                  },
                   name: {
                     id: 'field.osteology_anthropology.trepanationTechnique.name',
                     defaultMessage: 'Technique',
@@ -270,6 +300,10 @@ export default (configContext) => {
             trepanationHealing: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.osteology_anthropology.trepanationHealing.fullName',
+                    defaultMessage: 'Trepanation healing',
+                  },
                   name: {
                     id: 'field.osteology_anthropology.trepanationHealing.name',
                     defaultMessage: 'Healing',
@@ -286,6 +320,10 @@ export default (configContext) => {
             trepanationCertainty: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.osteology_anthropology.trepanationCertainty.fullName',
+                    defaultMessage: 'Trepanation certainty',
+                  },
                   name: {
                     id: 'field.osteology_anthropology.trepanationCertainty.name',
                     defaultMessage: 'Certainty',
@@ -302,9 +340,13 @@ export default (configContext) => {
             trepanationNote: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.osteology_anthropology.trepanationNote.fullName',
+                    defaultMessage: 'Trepanation comment',
+                  },
                   name: {
                     id: 'field.osteology_anthropology.trepanationNote.name',
-                    defaultMessage: 'Comments',
+                    defaultMessage: 'Comment',
                   },
                 }),
                 view: {
@@ -320,9 +362,13 @@ export default (configContext) => {
         trepanationGeneralNote: {
           [config]: {
             messages: defineMessages({
+              fullName: {
+                id: 'field.osteology_anthropology.trepanationGeneralNote.fullName',
+                defaultMessage: 'Trepanation general comment',
+              },
               name: {
                 id: 'field.osteology_anthropology.trepanationGeneralNote.name',
-                defaultMessage: 'Comments on trepanation',
+                defaultMessage: 'General comment',
               },
             }),
             view: {

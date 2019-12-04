@@ -18,7 +18,8 @@ export default (configContext) => {
 
   const {
     DATA_TYPE_BOOL,
-    DATE_TYPE_STRUCTURED_DATE,
+    DATA_TYPE_DATE,
+    DATA_TYPE_STRUCTURED_DATE,
   } = configContext.dataTypes;
 
   const {
@@ -198,7 +199,7 @@ export default (configContext) => {
               messages: defineMessages({
                 fullName: {
                   id: 'field.claims_nagpra.nagpraClaimSiteNote.fullName',
-                  defaultMessage: 'Site involved note',
+                  defaultMessage: 'Site/place involved note',
                 },
                 name: {
                   id: 'field.claims_nagpra.nagpraClaimSiteNote.name',
@@ -297,11 +298,15 @@ export default (configContext) => {
           },
           nagpraClaimPeriodDateGroup: {
             [config]: {
-              dataType: DATE_TYPE_STRUCTURED_DATE,
+              dataType: DATA_TYPE_STRUCTURED_DATE,
               messages: defineMessages({
                 fullName: {
                   id: 'field.claims_nagpra.nagpraClaimPeriodDateGroup.fullName',
                   defaultMessage: 'Time period represented date',
+                },
+                groupName: {
+                  id: 'field.claims_nagpra.nagpraClaimPeriodDateGroup.groupName',
+                  defaultMessage: 'Date',
                 },
                 name: {
                   id: 'field.claims_nagpra.nagpraClaimPeriodDateGroup.name',
@@ -357,6 +362,7 @@ export default (configContext) => {
           },
           nagpraClaimInitialResponseDate: {
             [config]: {
+              dataType: DATA_TYPE_DATE,
               messages: defineMessages({
                 fullName: {
                   id: 'field.claims_nagpra.nagpraClaimInitialResponseDate.fullName',
@@ -415,6 +421,7 @@ export default (configContext) => {
           },
           nagpraClaimSentToLocalDate: {
             [config]: {
+              dataType: DATA_TYPE_DATE,
               messages: defineMessages({
                 fullName: {
                   id: 'field.claims_nagpra.nagpraClaimSentToLocalDate.fullName',
@@ -473,6 +480,7 @@ export default (configContext) => {
           },
           nagpraClaimLocalRecDate: {
             [config]: {
+              dataType: DATA_TYPE_DATE,
               messages: defineMessages({
                 fullName: {
                   id: 'field.claims_nagpra.nagpraClaimLocalRecDate.fullName',
@@ -531,6 +539,7 @@ export default (configContext) => {
           },
           nagpraClaimSentToNatlDate: {
             [config]: {
+              dataType: DATA_TYPE_DATE,
               messages: defineMessages({
                 fullName: {
                   id: 'field.claims_nagpra.nagpraClaimSentToNatlDate.fullName',
@@ -589,6 +598,7 @@ export default (configContext) => {
           },
           nagpraClaimNatlRespDate: {
             [config]: {
+              dataType: DATA_TYPE_DATE,
               messages: defineMessages({
                 fullName: {
                   id: 'field.claims_nagpra.nagpraClaimNatlRespDate.fullName',
@@ -647,6 +657,7 @@ export default (configContext) => {
           },
           nagpraClaimNatlApprovalDate: {
             [config]: {
+              dataType: DATA_TYPE_DATE,
               messages: defineMessages({
                 fullName: {
                   id: 'field.claims_nagpra.nagpraClaimNatlApprovalDate.fullName',
@@ -705,6 +716,7 @@ export default (configContext) => {
           },
           nagpraClaimNoticeDate: {
             [config]: {
+              dataType: DATA_TYPE_DATE,
               messages: defineMessages({
                 fullName: {
                   id: 'field.claims_nagpra.nagpraClaimNoticeDate.fullName',
@@ -783,6 +795,7 @@ export default (configContext) => {
           },
           nagpraClaimTransferDate: {
             [config]: {
+              dataType: DATA_TYPE_DATE,
               messages: defineMessages({
                 fullName: {
                   id: 'field.claims_nagpra.nagpraClaimTransferDate.fullName',
@@ -834,6 +847,10 @@ export default (configContext) => {
       dispositionPossibilitiesDiscussedNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.dispositionPossibilitiesDiscussedNote.fullName',
+              defaultMessage: 'Disposition possibilities discussed note',
+            },
             name: {
               id: 'field.claims_nagpra.dispositionPossibilitiesDiscussedNote.name',
               defaultMessage: 'Note',
@@ -864,6 +881,10 @@ export default (configContext) => {
       surroundingTribesContactedNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.surroundingTribesContactedNote.fullName',
+              defaultMessage: 'Surrounding tribes contacted note',
+            },
             name: {
               id: 'field.claims_nagpra.surroundingTribesContactedNote.name',
               defaultMessage: 'Note',
@@ -894,6 +915,10 @@ export default (configContext) => {
       workingTeamNotifiedNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.workingTeamNotifiedNote.fullName',
+              defaultMessage: 'Institutional NAGPRA team notified note',
+            },
             name: {
               id: 'field.claims_nagpra.workingTeamNotifiedNote.name',
               defaultMessage: 'Note',
@@ -924,6 +949,10 @@ export default (configContext) => {
       siteFileResearchCompletedNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.siteFileResearchCompletedNote.fullName',
+              defaultMessage: 'Site file research completed note',
+            },
             name: {
               id: 'field.claims_nagpra.siteFileResearchCompletedNote.name',
               defaultMessage: 'Note',
@@ -954,6 +983,10 @@ export default (configContext) => {
       accessionFileResearchCompletedNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.accessionFileResearchCompletedNote.fullName',
+              defaultMessage: 'Accession file research completed note',
+            },
             name: {
               id: 'field.claims_nagpra.accessionFileResearchCompletedNote.name',
               defaultMessage: 'Note',
@@ -984,6 +1017,10 @@ export default (configContext) => {
       objectsLocatedAndCountedNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.objectsLocatedAndCountedNote.fullName',
+              defaultMessage: 'Objects located and counted note',
+            },
             name: {
               id: 'field.claims_nagpra.objectsLocatedAndCountedNote.name',
               defaultMessage: 'Note',
@@ -1014,6 +1051,10 @@ export default (configContext) => {
       objectsConsolidatedNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.objectsConsolidatedNote.fullName',
+              defaultMessage: 'Objects consolidated note',
+            },
             name: {
               id: 'field.claims_nagpra.objectsConsolidatedNote.name',
               defaultMessage: 'Note',
@@ -1044,6 +1085,10 @@ export default (configContext) => {
       objectsPhotographedNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.objectsPhotographedNote.fullName',
+              defaultMessage: 'Objects photographed note',
+            },
             name: {
               id: 'field.claims_nagpra.objectsPhotographedNote.name',
               defaultMessage: 'Note',
@@ -1074,6 +1119,10 @@ export default (configContext) => {
       registrationDocumentsDraftedNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.registrationDocumentsDraftedNote.fullName',
+              defaultMessage: 'Registration documents drawn up note',
+            },
             name: {
               id: 'field.claims_nagpra.registrationDocumentsDraftedNote.name',
               defaultMessage: 'Note',
@@ -1104,6 +1153,10 @@ export default (configContext) => {
       tribeContactedForPackingPreferencesNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.tribeContactedForPackingPreferencesNote.fullName',
+              defaultMessage: 'Tribe contacted for packing/storage instructions note',
+            },
             name: {
               id: 'field.claims_nagpra.tribeContactedForPackingPreferencesNote.name',
               defaultMessage: 'Note',
@@ -1134,6 +1187,10 @@ export default (configContext) => {
       dateArrangedForTransferNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.dateArrangedForTransferNote.fullName',
+              defaultMessage: 'Date arranged for pickup/transfer note',
+            },
             name: {
               id: 'field.claims_nagpra.dateArrangedForTransferNote.name',
               defaultMessage: 'Note',
@@ -1164,6 +1221,10 @@ export default (configContext) => {
       objectsMarkedAsDeaccessionedNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.objectsMarkedAsDeaccessionedNote.fullName',
+              defaultMessage: 'Objects marked as deaccessioned note',
+            },
             name: {
               id: 'field.claims_nagpra.objectsMarkedAsDeaccessionedNote.name',
               defaultMessage: 'Note',
@@ -1194,6 +1255,10 @@ export default (configContext) => {
       documentsArchivedNote: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.claims_nagpra.documentsArchivedNote.fullName',
+              defaultMessage: 'Claim documents archived note',
+            },
             name: {
               id: 'field.claims_nagpra.documentsArchivedNote.name',
               defaultMessage: 'Note',

@@ -16,8 +16,10 @@ export default (configContext) => {
   } = configContext.configHelpers;
 
   const {
+    DATA_TYPE_BOOL,
     DATA_TYPE_FLOAT,
     DATA_TYPE_INT,
+    DATA_TYPE_STRUCTURED_DATE,
   } = configContext.dataTypes;
 
   const {
@@ -139,6 +141,54 @@ export default (configContext) => {
             },
           },
         },
+
+        // Common owner fields are replaced by anthroOwnershipGroup. Hide them from search.
+
+        owners: {
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+        ownershipDateGroupList: {
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+        ownershipAccess: {
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+        ownershipCategory: {
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+        ownershipPlace: {
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+        ownershipExchangeMethod: {
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+        ownershipExchangeNote: {
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+        ownershipExchangePriceCurrency: {
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+        ownershipExchangePriceValue: {
+          [config]: {
+            searchDisabled: true,
+          },
+        },
       },
       'ns2:collectionobjects_anthro': {
         [config]: {
@@ -234,10 +284,15 @@ export default (configContext) => {
             },
             anthroOwnershipDateGroup: {
               [config]: {
+                dataType: DATA_TYPE_STRUCTURED_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.collectionobjects_anthro.anthroOwnershipDateGroup.fullName',
                     defaultMessage: 'Previous ownership date',
+                  },
+                  groupName: {
+                    id: 'field.collectionobjects_anthro.anthroOwnershipDateGroup.groupName',
+                    defaultMessage: 'Date',
                   },
                   name: {
                     id: 'field.collectionobjects_anthro.anthroOwnershipDateGroup.name',
@@ -388,6 +443,12 @@ export default (configContext) => {
           },
           commingledRemainsGroup: {
             [config]: {
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.collectionobjects_anthro.commingledRemainsGroup.fullName',
+                  defaultMessage: 'Commingled remains',
+                },
+              }),
               repeating: true,
               view: {
                 type: CompoundInput,
@@ -397,9 +458,13 @@ export default (configContext) => {
               [config]: {
                 dataType: DATA_TYPE_INT,
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.minIndividuals.fullName',
+                    defaultMessage: 'Commingled remains min. number of individuals',
+                  },
                   name: {
                     id: 'field.collectionobjects_anthro.minIndividuals.name',
-                    defaultMessage: 'Minimum number of individuals',
+                    defaultMessage: 'Min. number of individuals',
                   },
                 }),
                 view: {
@@ -410,6 +475,10 @@ export default (configContext) => {
             bone: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.bone.fullName',
+                    defaultMessage: 'Commingled remains bone',
+                  },
                   name: {
                     id: 'field.collectionobjects_anthro.bone.name',
                     defaultMessage: 'Bone',
@@ -423,6 +492,10 @@ export default (configContext) => {
             side: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.side.fullName',
+                    defaultMessage: 'Commingled remains side',
+                  },
                   name: {
                     id: 'field.collectionobjects_anthro.side.name',
                     defaultMessage: 'Side',
@@ -440,6 +513,10 @@ export default (configContext) => {
               [config]: {
                 dataType: DATA_TYPE_INT,
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.count.fullName',
+                    defaultMessage: 'Commingled remains count',
+                  },
                   name: {
                     id: 'field.collectionobjects_anthro.count.name',
                     defaultMessage: 'Count',
@@ -453,6 +530,10 @@ export default (configContext) => {
             sex: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.sex.fullName',
+                    defaultMessage: 'Commingled remains sex',
+                  },
                   name: {
                     id: 'field.collectionobjects_anthro.sex.name',
                     defaultMessage: 'Sex',
@@ -469,6 +550,10 @@ export default (configContext) => {
             ageRange: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.ageRange.fullName',
+                    defaultMessage: 'Commingled remains age range represented',
+                  },
                   name: {
                     id: 'field.collectionobjects_anthro.ageRange.name',
                     defaultMessage: 'Age range represented',
@@ -484,7 +569,12 @@ export default (configContext) => {
             },
             dentition: {
               [config]: {
+                dataType: DATA_TYPE_BOOL,
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.dentition.fullName',
+                    defaultMessage: 'Commingled remains dentition present?',
+                  },
                   name: {
                     id: 'field.collectionobjects_anthro.dentition.name',
                     defaultMessage: 'Dentition present?',
@@ -520,13 +610,13 @@ export default (configContext) => {
                 mortuaryTreatment: {
                   [config]: {
                     messages: defineMessages({
-                      name: {
-                        id: 'field.collectionobjects_anthro.mortuaryTreatment.name',
-                        defaultMessage: 'Treatment',
-                      },
                       fullName: {
                         id: 'field.collectionobjects_anthro.mortuaryTreatment.fullName',
                         defaultMessage: 'Mortuary treatment',
+                      },
+                      name: {
+                        id: 'field.collectionobjects_anthro.mortuaryTreatment.name',
+                        defaultMessage: 'Treatment',
                       },
                     }),
                     view: {
@@ -540,13 +630,13 @@ export default (configContext) => {
                 mortuaryTreatmentNote: {
                   [config]: {
                     messages: defineMessages({
-                      name: {
-                        id: 'field.collectionobjects_anthro.mortuaryTreatmentNote.name',
-                        defaultMessage: 'Note',
-                      },
                       fullName: {
                         id: 'field.collectionobjects_anthro.mortuaryTreatmentNote.fullName',
                         defaultMessage: 'Mortuary treatment note',
+                      },
+                      name: {
+                        id: 'field.collectionobjects_anthro.mortuaryTreatmentNote.name',
+                        defaultMessage: 'Note',
                       },
                     }),
                     view: {
@@ -559,13 +649,13 @@ export default (configContext) => {
             behrensmeyerSingleLower: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.behrensmeyerSingleLower.fullName',
+                    defaultMessage: 'Behrensmeyer stage - Single/lower',
+                  },
                   name: {
                     id: 'field.collectionobjects_anthro.behrensmeyerSingleLower.name',
                     defaultMessage: 'Single/lower',
-                  },
-                  fullName: {
-                    id: 'field.collectionobjects_anthro.behrensmeyerSingleLower.fullName',
-                    defaultMessage: 'Behrensmeyer stage - single/lower',
                   },
                 }),
                 view: {
@@ -579,13 +669,13 @@ export default (configContext) => {
             behrensmeyerUpper: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.collectionobjects_anthro.behrensmeyerUpper.fullName',
+                    defaultMessage: 'Behrensmeyer stage - Upper',
+                  },
                   name: {
                     id: 'field.collectionobjects_anthro.behrensmeyerUpper.name',
                     defaultMessage: 'Upper',
-                  },
-                  fullName: {
-                    id: 'field.collectionobjects_anthro.behrensmeyerUpper.fullName',
-                    defaultMessage: 'Behrensmeyer stage - upper',
                   },
                 }),
                 view: {
@@ -599,13 +689,13 @@ export default (configContext) => {
             commingledRemainsNote: {
               [config]: {
                 messages: defineMessages({
-                  name: {
-                    id: 'field.collectionobjects_anthro.commingledRemainsNote.name',
-                    defaultMessage: 'Note',
-                  },
                   fullName: {
                     id: 'field.collectionobjects_anthro.commingledRemainsNote.fullName',
                     defaultMessage: 'Commingled remains note',
+                  },
+                  name: {
+                    id: 'field.collectionobjects_anthro.commingledRemainsNote.name',
+                    defaultMessage: 'Note',
                   },
                 }),
                 view: {

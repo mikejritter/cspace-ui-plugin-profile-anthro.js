@@ -16,6 +16,7 @@ export default (configContext) => {
 
   const {
     DATA_TYPE_BOOL,
+    DATA_TYPE_STRUCTURED_DATE,
   } = configContext.dataTypes;
 
   const {
@@ -153,13 +154,13 @@ export default (configContext) => {
         [config]: {
           dataType: DATA_TYPE_BOOL,
           messages: defineMessages({
-            name: {
-              id: 'field.collectionobjects_nagpra.nagpraReportFiled.name',
-              defaultMessage: 'Report filed',
-            },
             fullName: {
               id: 'field.collectionobjects_nagpra.nagpraReportFiled.fullName',
               defaultMessage: 'NAGPRA report filed',
+            },
+            name: {
+              id: 'field.collectionobjects_nagpra.nagpraReportFiled.name',
+              defaultMessage: 'Report filed',
             },
           }),
           view: {
@@ -170,13 +171,13 @@ export default (configContext) => {
       nagpraReportFiledBy: {
         [config]: {
           messages: defineMessages({
-            name: {
-              id: 'field.collectionobjects_nagpra.nagpraReportFiledBy.name',
-              defaultMessage: 'By',
-            },
             fullName: {
               id: 'field.collectionobjects_nagpra.nagpraReportFiledBy.fullName',
               defaultMessage: 'NAGPRA report filed by',
+            },
+            name: {
+              id: 'field.collectionobjects_nagpra.nagpraReportFiledBy.name',
+              defaultMessage: 'By',
             },
           }),
           view: {
@@ -189,14 +190,15 @@ export default (configContext) => {
       },
       nagpraReportFiledDate: {
         [config]: {
+          dataType: DATA_TYPE_STRUCTURED_DATE,
           messages: defineMessages({
-            name: {
-              id: 'field.collectionobjects_nagpra.nagpraReportFiledDate.name',
-              defaultMessage: 'Date',
-            },
             fullName: {
               id: 'field.collectionobjects_nagpra.nagpraReportFiledDate.fullName',
               defaultMessage: 'NAGPRA report filed date',
+            },
+            name: {
+              id: 'field.collectionobjects_nagpra.nagpraReportFiledDate.name',
+              defaultMessage: 'Date',
             },
           }),
           view: {
