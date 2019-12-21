@@ -1,7 +1,7 @@
 import claim from './claim';
 import collectionobject from './collectionobject';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   extensions: {
     nagpra: {
       claim: claim(configContext),

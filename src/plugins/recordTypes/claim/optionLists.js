@@ -1,2 +1,1 @@
-export default configContext =>
-  configContext.config.extensions.nagpra.claim.optionLists;
+export default (configContext) => configContext.config.extensions.nagpra.claim.optionLists;

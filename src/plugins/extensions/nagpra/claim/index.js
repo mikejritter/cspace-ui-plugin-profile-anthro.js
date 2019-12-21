@@ -3,7 +3,7 @@ import form from './form';
 import messages from './messages';
 import optionLists from './optionLists';
 
-export default configContext => ({
+export default (configContext) => ({
   messages,
   optionLists,
   fields: fields(configContext),

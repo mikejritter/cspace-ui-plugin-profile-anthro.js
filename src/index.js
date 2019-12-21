@@ -36,6 +36,6 @@ export default () => ({
     naturalHistoryExtensionPlugin(),
     osteologyRecordPlugin(),
     taxonRecordPlugin(),
-    ...plugins.map(plugin => plugin()),
+    ...plugins.map((plugin) => plugin()),
   ],
 });
