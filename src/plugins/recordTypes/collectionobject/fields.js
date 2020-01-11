@@ -708,6 +708,9 @@ export default (configContext) => {
             },
           },
         },
+        // FIXME: Locality was added for DRYD-400, but I didn't realize locality was already
+        // included by the naturalhistory extension, so the locality fields are duplicated in both
+        // collectionobjects_naturalhistory_extension and collectionobjects_anthro.
         ...extensions.locality.fields,
       },
       ...extensions.annotation.collectionobject.fields,
