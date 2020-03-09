@@ -126,6 +126,107 @@ export default (configContext) => {
           },
         },
       },
+      nagpraDetermGroupList: {
+        [config]: {
+          view: {
+            type: CompoundInput,
+          },
+        },
+        nagpraDetermGroup: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_nagpra.nagpraDetermGroup.name',
+                defaultMessage: 'Cultural determination',
+              },
+            }),
+            repeating: true,
+            view: {
+              type: CompoundInput,
+              props: {
+                tabular: true,
+              },
+            },
+          },
+          nagpraDetermCulture: {
+            [config]: {
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.collectionobjects_nagpra.nagpraDetermCulture.fullName',
+                  defaultMessage: 'Cultural determination culture',
+                },
+                name: {
+                  id: 'field.collectionobjects_nagpra.nagpraDetermCulture.name',
+                  defaultMessage: 'Culture',
+                },
+              }),
+              view: {
+                type: AutocompleteInput,
+                props: {
+                  source: 'concept/archculture',
+                },
+              },
+            },
+          },
+          nagpraDetermType: {
+            [config]: {
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.collectionobjects_nagpra.nagpraDetermType.fullName',
+                  defaultMessage: 'Cultural determination type',
+                },
+                name: {
+                  id: 'field.collectionobjects_nagpra.nagpraDetermType.name',
+                  defaultMessage: 'Type',
+                },
+              }),
+              view: {
+                type: TermPickerInput,
+                props: {
+                  source: 'nagpradetermtype',
+                },
+              },
+            },
+          },
+          nagpraDetermBy: {
+            [config]: {
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.collectionobjects_nagpra.nagpraDetermBy.fullName',
+                  defaultMessage: 'Cultural determination by',
+                },
+                name: {
+                  id: 'field.collectionobjects_nagpra.nagpraDetermBy.name',
+                  defaultMessage: 'By',
+                },
+              }),
+              view: {
+                type: AutocompleteInput,
+                props: {
+                  source: 'person/local,person/shared,organization/local,organization/shared',
+                },
+              },
+            },
+          },
+          nagpraDetermNote: {
+            [config]: {
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.collectionobjects_nagpra.nagpraDetermNote.fullName',
+                  defaultMessage: 'Cultural determination note',
+                },
+                name: {
+                  id: 'field.collectionobjects_nagpra.nagpraDetermNote.name',
+                  defaultMessage: 'Note',
+                },
+              }),
+              view: {
+                type: TextInput,
+              },
+            },
+          },
+        },
+      },
       repatriationNotes: {
         [config]: {
           view: {

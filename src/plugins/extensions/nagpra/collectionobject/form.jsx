@@ -35,12 +35,17 @@ export default (configContext) => {
           <Field name="repatriationNotes" subpath="ns2:collectionobjects_nagpra">
             <Field name="repatriationNote" />
           </Field>
-
-          <Field name="nagpraCulturalDeterminations" subpath="ns2:collectionobjects_nagpra">
-            <Field name="nagpraCulturalDetermination" />
-          </Field>
         </Col>
       </Cols>
+
+      <Field name="nagpraDetermGroupList" subpath="ns2:collectionobjects_nagpra">
+        <Field name="nagpraDetermGroup">
+          <Field name="nagpraDetermCulture" />
+          <Field name="nagpraDetermType" />
+          <Field name="nagpraDetermBy" />
+          <Field name="nagpraDetermNote" />
+        </Field>
+      </Field>
 
       <InputTable name="nagpraReportFiled">
         <Field name="nagpraReportFiled" subpath="ns2:collectionobjects_nagpra" />
