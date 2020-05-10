@@ -88,7 +88,7 @@ export default (configContext) => {
           [config]: {
             messages: defineMessages({
               name: {
-                id: 'field.collectionobjects_nagpra.graveAssocCodes.name',
+                id: 'field.collectionobjects_nagpra.graveAssocCode.name',
                 defaultMessage: 'Grave association code',
               },
             }),

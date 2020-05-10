@@ -1,5 +1,13 @@
 # Change Log
 
+## v4.0.0
+
+v4.0.0 contains configuration cleanup.
+
+### Breaking Changes
+
+- The message ID of the label for the field `graveAssocCodes/graveAssocCode` has changed. It is now `field.collectionobjects_nagpra.graveAssocCode.name`. If you have customized this label using the previous message ID (`field.collectionobjects_nagpra.graveAssocCodes.name`), update your configuration to use the new ID. The previous ID contained a typo.
+
 ## v3.0.0
 
 v3.0.0 adds support for CollectionSpace 6.0.
