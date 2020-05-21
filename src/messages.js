@@ -1,5 +1,5 @@
 export default {
-  'about.title': 'Welcome to the CollectionSpace: Anthropology',
+  'about.title': 'Welcome to CollectionSpace: Anthropology',
 
   // claim
 
