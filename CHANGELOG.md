@@ -3,6 +3,7 @@
 ## v4.1.0
 
 - Added the Named Collection field to the Object record editor form (only if using cspace-ui version 5).
+- Added local organizations to NAGPRA Report Filed By autocomplete sources.
 
 ## v4.0.0
 
