@@ -47,7 +47,7 @@
     "cspace-ui-plugin-ext-naturalhistory": "^1.0.1",
     "cspace-ui-plugin-record-osteology": "^1.0.5",
     "cspace-ui-plugin-record-taxon": "^2.0.0",
-    "cspace-ui-plugin-ext-nagpra": "1.0.0-d.3",
+    "cspace-ui-plugin-ext-nagpra": "1.0.0-d.4",
     "react-intl": "^2.3.0"
   },
   "devDependencies": {
