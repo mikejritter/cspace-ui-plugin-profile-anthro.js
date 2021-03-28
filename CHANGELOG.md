@@ -1,5 +1,21 @@
 # Change Log
 
+## v5.0.0
+
+v5.0.0 adds support for CollectionSpace 7.0.
+
+### Breaking Changes
+
+- The record editor form for object records now uses the `nagpraReportFiledGroupList/  nagpraReportFiledGroup` repeating group, added in CollectionSpace 7.0. To use this version of the anthropology profile with an older CollectionSpace server, this field group should be hidden; otherwise, any values entered will not be saved.
+
+  The following fields, present in CollectionSpace prior to 7.0, have been removed from the form:
+
+  - `nagpraReportFiled`
+  - `nagpraReportFiledBy`
+  - `nagpraReportFiledDate`
+
+  To use this version of the anthropology profile with an older CollectionSpace server, the above fields must be added back to the form.
+
 ## v4.1.0
 
 - Added the Named Collection field to the Object record editor form (only if using cspace-ui version 5).
