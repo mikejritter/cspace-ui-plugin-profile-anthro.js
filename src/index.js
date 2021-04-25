@@ -3,7 +3,6 @@
  * webpack.config.js. */
 
 import { defineMessages } from 'react-intl';
-import annotationExtensionPlugin from 'cspace-ui-plugin-ext-annotation';
 import culturalCareExtensionPlugin from 'cspace-ui-plugin-ext-culturalcare';
 import localityExtensionPlugin from 'cspace-ui-plugin-ext-locality';
 import naturalHistoryExtensionPlugin from 'cspace-ui-plugin-ext-naturalhistory';
@@ -31,7 +30,6 @@ export default () => ({
     },
   },
   plugins: [
-    annotationExtensionPlugin(),
     culturalCareExtensionPlugin(),
     localityExtensionPlugin(),
     naturalHistoryExtensionPlugin(),

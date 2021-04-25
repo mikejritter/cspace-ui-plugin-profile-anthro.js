@@ -713,7 +713,6 @@ export default (configContext) => {
         // collectionobjects_naturalhistory_extension and collectionobjects_anthro.
         ...extensions.locality.fields,
       },
-      ...extensions.annotation.collectionobject.fields,
       ...extensions.culturalcare.collectionobject.fields,
       ...extensions.nagpra.collectionobject.fields,
       ...extensions.naturalhistory.collectionobject.fields,

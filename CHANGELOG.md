@@ -16,6 +16,8 @@ v5.0.0 adds support for CollectionSpace 7.0.
 
   To use this version of the anthropology profile with an older CollectionSpace server, the above fields must be added back to the form.
 
+- v5.0.0 requires cspace-ui version 6. The record editor form for object records now uses the annotation fields that are defined in cspace-ui as of version 6, instead of using the (now deprecated) cspace-ui-plugin-ext-annotation plugin.
+
 ## v4.1.0
 
 - Added the Named Collection field to the Object record editor form (only if using cspace-ui version 5).
