@@ -26,6 +26,12 @@ export default () => ({
           defaultMessage: 'Anthropology profile',
         },
       }),
+      packageName: cspaceUIPluginProfileAnthro.packageName,
+      packageVersion: cspaceUIPluginProfileAnthro.packageVersion,
+      buildNum: cspaceUIPluginProfileAnthro.buildNum,
+      repositoryUrl: cspaceUIPluginProfileAnthro.repositoryUrl,
+      // packageVersion is now preferred, but keep version for backward compatibility with older
+      // versions of cspace-ui.
       version: cspaceUIPluginProfileAnthro.packageVersion,
     },
   },
