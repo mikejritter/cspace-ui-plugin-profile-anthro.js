@@ -1,5 +1,13 @@
 # Change Log
 
+## v7.0.0
+
+v7.0.0 adds support for CollectionSpace 7.2.
+
+### Breaking Changes
+
+- The record editor form for Object records now includes a new NAGPRA Note field (`nagpraNotes/nagpraNote`), added in CollectionSpace 7.2. To use this version of the anthropology profile with an older CollectionSpace server, the NAGPRA Note field should be hidden; otherwise, any values entered will not be saved.
+
 ## v6.0.0
 
 v6.0.0 adds support for CollectionSpace 7.1.
