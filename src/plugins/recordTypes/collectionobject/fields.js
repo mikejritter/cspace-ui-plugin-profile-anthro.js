@@ -708,6 +708,30 @@ export default (configContext) => {
             },
           },
         },
+        fieldCollectionEvents: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          fieldCollectionEvent: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_anthro.fieldCollectionEvent.name',
+                  defaultMessage: 'Field collection event',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: AutocompleteInput,
+                props: {
+                  source: 'chronology/fieldcollection,chronology/event'
+                },
+              },
+            },
+          },
+        },
         // FIXME: Locality was added for DRYD-400, but I didn't realize locality was already
         // included by the naturalhistory extension, so the locality fields are duplicated in both
         // collectionobjects_naturalhistory_extension and collectionobjects_anthro.

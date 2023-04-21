@@ -187,6 +187,10 @@ const template = (configContext) => {
               <Field name="fieldColEventName" />
             </Field>
 
+            <Field name="fieldCollectionEvents" subpath="ns2:collectionobjects_anthro">
+              <Field name="fieldCollectionEvent" />
+            </Field>
+
             <Field name="fieldCollectionFeature" />
             <Field name="fieldCollectionNote" />
           </Col>
