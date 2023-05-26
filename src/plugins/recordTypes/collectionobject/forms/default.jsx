@@ -162,6 +162,10 @@ const template = (configContext) => {
       <Panel name="collect" collapsible collapsed>
         <Row>
           <Col>
+            <Field name="fieldCollectionSites">
+              <Field name="fieldCollectionSite" />
+            </Field>
+
             <Field name="fieldCollectionDateGroup" />
 
             <Field name="fieldCollectionMethods">
@@ -185,6 +189,10 @@ const template = (configContext) => {
 
             <Field name="fieldColEventNames">
               <Field name="fieldColEventName" />
+            </Field>
+
+            <Field name="fieldCollectionEvents" subpath="ns2:collectionobjects_anthro">
+              <Field name="fieldCollectionEvent" />
             </Field>
 
             <Field name="fieldCollectionFeature" />
