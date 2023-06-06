@@ -52,6 +52,7 @@ const template = (configContext) => {
               </Col>
             </Row>
 
+            <Field name="descriptionLevel" />
             <Field name="recordStatus" />
           </Col>
 
@@ -277,6 +278,10 @@ const template = (configContext) => {
 
             <Field name="colors">
               <Field name="color" />
+            </Field>
+
+            <Field name="apparelSizes">
+              <Field name="apparelSize" />
             </Field>
           </Col>
         </Row>
