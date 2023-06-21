@@ -6,7 +6,13 @@ v7.0.0 adds support for CollectionSpace 7.2.
 
 ### Breaking Changes
 
-- The record editor form for Object records now includes a new NAGPRA Note field (`nagpraNotes/nagpraNote`), added in CollectionSpace 7.2. To use this version of the anthropology profile with an older CollectionSpace server, the NAGPRA Note field should be hidden; otherwise, any values entered will not be saved.
+The record editor form for Object records now includes the following new fields, added in CollectionSpace 7.2. To use this version of the anthropology profile with an older CollectionSpace server, these fields should be hidden; otherwise, any values entered will not be saved.
+
+- NAGPRA Note (`nagpraNotes/nagpraNote`),
+- Field Collection Event (`fieldCollectionEvents/fieldCollectionEvent`),
+- Field Collection Site (`fieldCollectionSites/fieldCollectionSite`)
+- Apparel Size (`apparelSizes/apparelSize`)
+- Description Level (`descriptionLevel`)
 
 ## v6.0.0
 
