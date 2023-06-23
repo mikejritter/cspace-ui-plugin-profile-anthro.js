@@ -416,6 +416,10 @@ const template = (configContext) => {
                 </Field>
               </Field>
 
+              <Field name="contentEvents">
+                <Field name="contentEvent" />
+              </Field>
+
               <Field name="contentOtherGroupList">
                 <Field name="contentOtherGroup">
                   <Field name="contentOther" />
@@ -549,6 +553,10 @@ const template = (configContext) => {
                 <Field name="assocEventName" />
                 <Field name="assocEventNameType" />
               </InputTable>
+
+              <Field name="assocEvents">
+                <Field name="assocEvent" />
+              </Field>
 
               <Field name="assocEventOrganizations">
                 <Field name="assocEventOrganization" />
