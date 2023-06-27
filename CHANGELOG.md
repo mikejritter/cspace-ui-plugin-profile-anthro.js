@@ -9,10 +9,14 @@ v7.0.0 adds support for CollectionSpace 7.2.
 The record editor form for Object records now includes the following new fields, added in CollectionSpace 7.2. To use this version of the anthropology profile with an older CollectionSpace server, these fields should be hidden; otherwise, any values entered will not be saved.
 
 - Description Level (`descriptionLevel`)
-- Apparel Size (`apparelSizes/apparelSize`)
-- NAGPRA Note (`nagpraNotes/nagpraNote`),
-- Field Collection Event (`fieldCollectionEvents/fieldCollectionEvent`),
+- Object Name Controlled (`objectNameList/objectNameGroup/objectNameControlled`)
+- Material Controlled (`materialGroupList/materialGroup/materialControlled`)
+- Field Collection Event (`fieldCollectionEvents/fieldCollectionEvent`)
 - Field Collection Site (`fieldCollectionSites/fieldCollectionSite`)
+- Apparel Size (`apparelSizes/apparelSize`)
+- NAGPRA Note (`nagpraNotes/nagpraNote`)
+- Content controlled event or period/era (`contentEvents/contentEvent`)
+- Associated controlled event or period/era (`assocEvents/assocEvent`)
 
 ## v6.0.0
 
