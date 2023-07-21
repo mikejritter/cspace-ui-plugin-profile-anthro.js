@@ -211,6 +211,10 @@ const template = (configContext) => {
               <Field name="objectProductionDateGroup" />
             </Field>
 
+            <Field name="objectProductionEras">
+              <Field name="objectProductionEra" />
+            </Field>
+
             <Field name="techniqueGroupList">
               <Field name="techniqueGroup">
                 <Field name="technique" />
