@@ -1,3 +1,4 @@
+import chronology from './chronology';
 import claim from './claim';
 import collectionobject from './collectionobject';
 import concept from './concept';
@@ -7,6 +8,7 @@ import person from './person';
 import place from './place';
 
 export default [
+  chronology,
   claim,
   collectionobject,
   concept,
