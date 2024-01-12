@@ -50,17 +50,17 @@ export default {
       name: {
         id: 'vocab.concept.ethfilecode.name',
         description: 'The name of the ethfilecode concept vocabulary.',
-        defaultMessage: 'Ethnographic File Code',
+        defaultMessage: 'Function',
       },
       collectionName: {
         id: 'vocab.concept.ethfilecode.collectionName',
         description: 'The name of a collection of records from the ethfilecode concept vocabulary.',
-        defaultMessage: 'Ethnographic File Codes',
+        defaultMessage: 'Functions',
       },
       itemName: {
         id: 'vocab.concept.ethfilecode.itemName',
         description: 'The name of a record from the vocabulary.',
-        defaultMessage: 'Ethnographic File Code',
+        defaultMessage: 'Function',
       },
     }),
     serviceConfig: {

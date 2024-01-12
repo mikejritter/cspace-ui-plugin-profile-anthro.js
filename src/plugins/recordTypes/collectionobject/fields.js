@@ -207,7 +207,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.collectionobjects_anthro.ethnoFileCode.name',
-                  defaultMessage: 'Ethnographic file code',
+                  defaultMessage: 'Function',
                 },
               }),
               repeating: true,
