@@ -4,6 +4,19 @@ export default (configContext) => {
   } = configContext.configHelpers;
 
   return {
+    assocConceptAuthGroupList: {
+      assocConceptAuthGroup: {
+        assocConcept: {
+          [config]: {
+            view: {
+              props: {
+                source: 'concept/activity,concept/associated,concept/material,concept/nomenclature,concept/occasion,concept/archculture',
+              },
+            },
+          },
+        },
+      },
+    },
     assocChronologyAuthGroupList: {
       assocChronologyAuthGroup: {
         assocChronology: {
