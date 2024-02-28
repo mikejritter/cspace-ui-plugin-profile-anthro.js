@@ -5,8 +5,7 @@ export default (configContext) => {
 
   return {
     document: {
-      ...extensions.nagpra.place.fields,
-      'ns2:places_common': {
+      'ns2:chronologies_common': {
         ...extensions.associatedAuthority.fields,
       },
     },
