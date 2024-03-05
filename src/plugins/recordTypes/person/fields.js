@@ -7,9 +7,14 @@ export default (configContext) => {
     configKey: config,
   } = configContext.configHelpers;
 
+  const {
+    extensions,
+  } = configContext.config;
+
   return {
     document: {
       'ns2:persons_common': {
+        ...extensions.associatedAuthority.fields,
         personTermGroupList: {
           personTermGroup: {
             termType: {
