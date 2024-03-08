@@ -188,7 +188,9 @@ const template = (configContext) => {
               <Field name="fieldCollectionMethod" />
             </Field>
 
-            <Field name="fieldCollectionPlace" />
+            <Field name="fieldCollectionPlaces">
+              <Field name="fieldCollectionPlace" />
+            </Field>
             <Field name="fieldLocVerbatim" subpath="ns2:collectionobjects_anthro" />
 
             <Field name="fieldCollectionSources">
