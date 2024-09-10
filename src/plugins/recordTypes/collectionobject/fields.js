@@ -737,6 +737,112 @@ export default (configContext) => {
         // collectionobjects_naturalhistory_extension and collectionobjects_anthro.
         ...extensions.locality.fields,
       },
+      'ns2:collectionobjects_objectcategory_extension': {
+        [config]: {
+          service: {
+            ns: 'http://collectionspace.org/services/collectionobject/domain/objectcategory_extension',
+          },
+        },
+        objectCategoryGroupList: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          objectCategoryGroup: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.procedure.objectCategoryGroup.name',
+                  defaultMessage: 'Object category',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: CompoundInput,
+                props: {
+                  tabular: true,
+                },
+              },
+            },
+            category: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.procedure.category.fullName',
+                    defaultMessage: 'Object category',
+                  },
+                  name: {
+                    id: 'field.procedure.category.name',
+                    defaultMessage: 'Category',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'objectcategory',
+                  },
+                },
+              },
+            },
+            categoryCount: {
+              [config]: {
+                dataType: DATA_TYPE_INT,
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.procedure.categoryCount.fullName',
+                    defaultMessage: 'Object category count',
+                  },
+                  name: {
+                    id: 'field.procedure.categoryCount.name',
+                    defaultMessage: 'Count',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+            categoryCountUnit: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.procedure.categoryCountUnit.fullName',
+                    defaultMessage: 'Object category unit',
+                  },
+                  name: {
+                    id: 'field.procedure.categoryCountUnit.name',
+                    defaultMessage: 'Unit',
+                  },
+                }),
+                view: {
+                  type: TermPickerInput,
+                  props: {
+                    source: 'objectcountunit',
+                  },
+                },
+              },
+            },
+            categoryNote: {
+              [config]: {
+                messages: defineMessages({
+                  fullName: {
+                    id: 'field.procedure.categoryNote.fullName',
+                    defaultMessage: 'Object category note',
+                  },
+                  name: {
+                    id: 'field.procedure.categoryNote.name',
+                    defaultMessage: 'Note',
+                  },
+                }),
+                view: {
+                  type: TextInput,
+                },
+              },
+            },
+          },
+        },
+      },
       ...extensions.culturalcare.collectionobject.fields,
       ...extensions.nagpra.collectionobject.fields,
       ...extensions.naturalhistory.collectionobject.fields,

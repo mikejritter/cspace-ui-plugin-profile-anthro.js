@@ -60,6 +60,15 @@ const template = (configContext) => {
           </Field>
         </Field>
 
+        <Field name="objectCategoryGroupList">
+          <Field name="objectCategoryGroup">
+            <Field name="category" />
+            <Field name="categoryCount" />
+            <Field name="categoryCountUnit" />
+            <Field name="categoryNote" />
+          </Field>
+        </Field>
+
         <Field name="objectNameList">
           <Field name="objectNameGroup">
             <Field name="objectNameControlled" />
