@@ -60,7 +60,7 @@ const template = (configContext) => {
           </Field>
         </Field>
 
-        <Field name="objectCategoryGroupList">
+        <Field name="objectCategoryGroupList" subpath="ns2:collectionobjects_objectcategory_extension">
           <Field name="objectCategoryGroup">
             <Field name="category" />
             <Field name="categoryCount" />
