@@ -753,7 +753,7 @@ export default (configContext) => {
             [config]: {
               messages: defineMessages({
                 name: {
-                  id: 'field.procedure.objectCategoryGroup.name',
+                  id: 'field.collectionobjects_objectcategory_extension.objectCategoryGroup.name',
                   defaultMessage: 'Object category',
                 },
               }),
@@ -769,11 +769,11 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   fullName: {
-                    id: 'field.procedure.category.fullName',
+                    id: 'field.collectionobjects_objectcategory_extension.category.fullName',
                     defaultMessage: 'Object category',
                   },
                   name: {
-                    id: 'field.procedure.category.name',
+                    id: 'field.collectionobjects_objectcategory_extension.category.name',
                     defaultMessage: 'Category',
                   },
                 }),
@@ -790,11 +790,11 @@ export default (configContext) => {
                 dataType: DATA_TYPE_INT,
                 messages: defineMessages({
                   fullName: {
-                    id: 'field.procedure.categoryCount.fullName',
+                    id: 'field.collectionobjects_objectcategory_extension.categoryCount.fullName',
                     defaultMessage: 'Object category count',
                   },
                   name: {
-                    id: 'field.procedure.categoryCount.name',
+                    id: 'field.collectionobjects_objectcategory_extension.categoryCount.name',
                     defaultMessage: 'Count',
                   },
                 }),
@@ -807,11 +807,11 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   fullName: {
-                    id: 'field.procedure.categoryCountUnit.fullName',
+                    id: 'field.collectionobjects_objectcategory_extension.categoryCountUnit.fullName',
                     defaultMessage: 'Object category unit',
                   },
                   name: {
-                    id: 'field.procedure.categoryCountUnit.name',
+                    id: 'field.collectionobjects_objectcategory_extension.categoryCountUnit.name',
                     defaultMessage: 'Unit',
                   },
                 }),
@@ -827,11 +827,11 @@ export default (configContext) => {
               [config]: {
                 messages: defineMessages({
                   fullName: {
-                    id: 'field.procedure.categoryNote.fullName',
+                    id: 'field.collectionobjects_objectcategory_extension.categoryNote.fullName',
                     defaultMessage: 'Object category note',
                   },
                   name: {
-                    id: 'field.procedure.categoryNote.name',
+                    id: 'field.collectionobjects_objectcategory_extension.categoryNote.name',
                     defaultMessage: 'Note',
                   },
                 }),
