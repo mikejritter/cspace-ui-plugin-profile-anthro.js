@@ -11,7 +11,7 @@ const messages = defineMessages({
   determination: {
     id: 'detailList.tags.collectionobject.determinations',
     description: 'The prefix for NAGPRA determination tags in the search detail view',
-    defaultMessage: 'NAGPRA DETERMINATION: ',
+    defaultMessage: 'NAGPRA DETERMINATION: {categories}',
   },
 });
 
@@ -64,10 +64,14 @@ export default (configContext) => {
           } else {
             nagpraDeterminations = formatRefName(nagpraCategory);
           }
+
           determinations = (
             <p>
-              <span>{intl.formatMessage(messages.determination)}</span>
-              {nagpraDeterminations}
+              <span>
+                {intl.formatMessage(messages.determination, {
+                  categories: nagpraDeterminations,
+                })}
+              </span>
             </p>
           );
         }
